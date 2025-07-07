@@ -37,11 +37,13 @@ header {
     inset 0 0 8px rgba(0, 255, 100, 0.2);
     transform: scale(1.05);
     border-radius: 5px;
+    margin-top: 5px;
 }
 .links a:active {
     font-size: 1.3em;
 }
 main {
+    border-top: 3px solid rgb(95, 136, 12);
     grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(3, 1fr);
     display: grid;
@@ -98,6 +100,7 @@ main {
   }
 }
 footer {
+
     color: white;
     text-align: center;
     font-size: 0.8em;
