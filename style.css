@@ -32,3 +32,22 @@ header {
 .links a:active {
     font-size: 1.3em;
 }
+main {
+    border: 2px solid white;
+}
+.section1 {
+    border: 3px solid white;
+    color:white;
+    font-size: 0.9em;
+}
+.section1 > img{
+    border-radius: 50%;
+}
+.section2 {
+    color: white;
+}
+footer {
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+}
