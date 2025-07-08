@@ -11,13 +11,21 @@ body {
     height: 100vh;
     width: 100vw;
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: 70px 1fr auto;
     grid-template-columns: repeat(4, 1fr);
 }
 header {
     grid-area: 1/1/2/5; 
+    transform: scaleX(0);
+    transform-origin: center;
+    animation: expandirLinha 0.5s ease-out 1s forwards;
 }
 
+@keyframes expandirLinha {
+  to {
+    transform: scaleX(1);
+  }
+}
 .links {
     width: 100vw;
     display: flex;
@@ -43,7 +51,9 @@ header {
     font-size: 1.3em;
 }
 main {
-    border-top: 3px solid rgb(95, 136, 12);
+    margin: 5px;
+    border: 2px solid rgb(95, 136, 12);
+    border-radius: 5px;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(3, 1fr);
     display: grid;
@@ -79,7 +89,6 @@ main {
     margin-top: 20px;
 }
 .section2 {
-
     grid-area: 1/2/3/3;
     display: flex;
     align-items: center;
@@ -87,7 +96,6 @@ main {
     color: white;
     opacity: 0;
     animation: aparecerDaDireita 1s ease-out 0.5s forwards;
-
 }
 @keyframes aparecerDaDireita {
   from {
