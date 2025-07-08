@@ -97,6 +97,14 @@ main {
     opacity: 0;
     animation: aparecerDaDireita 1s ease-out 0.5s forwards;
 }
+#digitando {
+  overflow: hidden;
+  border-right: 2px solid white;
+  display: flex;
+  flex-flow: column wrap;
+  width: 0;
+  animation: escrever 6s steps(90, end) forwards, blink 0.7s infinite;
+}
 @keyframes aparecerDaDireita {
   from {
     opacity: 0;
@@ -105,6 +113,17 @@ main {
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+@keyframes escrever {
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
   }
 }
 footer {
