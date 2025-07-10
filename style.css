@@ -98,6 +98,7 @@ main {
     animation: aparecerDaDireita 1s ease-out 0.5s forwards;
 }
 #digitando {
+  white-space: pre-line;
   overflow: hidden;
   border-right: 2px solid white;
   display: flex;
