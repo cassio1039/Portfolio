@@ -128,10 +128,21 @@ main {
   }
 }
 footer {
-
     color: white;
     text-align: center;
     font-size: 0.8em;
     grid-column: 1/5;
-
+}
+.contatos a {
+    display: flex;  
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    gap: 10px;
+}
+#iddoscontatos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
 }
