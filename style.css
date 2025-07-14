@@ -96,6 +96,7 @@ main {
     color: white;
     opacity: 0;
     animation: aparecerDaDireita 1s ease-out 0.5s forwards;
+    margin-right: 20px;
 }
 #digitando {
   white-space: pre-line;
